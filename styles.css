@@ -1,0 +1,291 @@
+*{
+box-sizing:border-box
+}
+html{
+scroll-behavior:smooth
+}
+body{
+margin:0;
+font-family:Inter,Segoe UI,Arial,sans-serif;
+background:#f4f7fb;
+color:#172033;
+line-height:1.6
+}
+.container{
+width:min(1120px,92%);
+margin:auto
+}
+.nav{
+background:#12233f;
+color:#fff;
+position:sticky;
+top:0;
+z-index:10;
+box-shadow:0 3px 12px #0002
+}
+.nav .container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:14px 0
+}
+.brand{
+font-weight:800
+}
+.nav a{
+color:#fff;
+text-decoration:none;
+margin-left:16px;
+font-size:.92rem
+}
+.hero{
+padding:56px 0;
+background:linear-gradient(135deg,#e9f2ff,#fff)
+}
+h1,h2,h3{
+line-height:1.2
+}
+h1{
+font-size:clamp(2rem,5vw,3.4rem);
+margin:.2em 0
+}
+.lead{
+font-size:1.1rem;
+color:#526078
+}
+.card{
+background:#fff;
+border:1px solid #dce4f0;
+border-radius:18px;
+padding:24px;
+box-shadow:0 8px 25px #223b5a12;
+margin:20px 0
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:18px
+}
+.pill{
+display:inline-block;
+padding:6px 11px;
+border-radius:999px;
+background:#e8f1ff;
+color:#164d9b;
+font-weight:700;
+font-size:.8rem
+}
+.diagram{
+display:flex;
+gap:10px;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+margin:18px 0
+}
+.node{
+padding:15px 18px;
+border:2px solid #8db3e6;
+border-radius:12px;
+background:#f7fbff;
+text-align:center;
+font-weight:700
+}
+.arrow{
+font-size:1.5rem;
+color:#4874ad
+}
+.table-wrap{
+overflow:auto
+}
+table{
+width:100%;
+border-collapse:collapse;
+background:#fff
+}
+th,td{
+border:1px solid #d7e0ec;
+padding:10px;
+text-align:left
+}
+th{
+background:#edf4fc
+}
+.form-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px
+}
+.full{
+grid-column:1/-1
+}
+label{
+font-weight:700;
+display:block;
+margin-bottom:6px
+}
+input,select,textarea{
+width:100%;
+padding:11px 12px;
+border:1px solid #cbd6e5;
+border-radius:10px;
+font:inherit
+}
+input:focus,select:focus,textarea:focus{
+outline:3px solid #d8e9ff;
+border-color:#4f91e8
+}
+button,.btn{
+border:0;
+background:#165dba;
+color:white;
+padding:12px 18px;
+border-radius:10px;
+font-weight:800;
+cursor:pointer;
+text-decoration:none;
+display:inline-block
+}
+.result{
+margin-top:18px;
+padding:16px;
+border-radius:12px;
+background:#eef8ef;
+border:1px solid #bfe2c3
+}
+.media{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px
+}
+.media img,.media video{
+width:100%;
+border-radius:14px;
+border:1px solid #ccd8e6
+}
+.code{
+background:#0d1626;
+color:#e7eef9;
+padding:16px;
+border-radius:12px;
+overflow:auto;
+font-family:Consolas,monospace;
+font-size:.86rem;
+white-space:pre-wrap
+}
+.fashion-hero{
+min-height:430px;
+display:grid;
+place-items:center;
+text-align:center;
+background:radial-gradient(circle at 20% 20%,#ffd5e7,transparent 35%),linear-gradient(135deg,#151515,#51405a);
+color:white;
+border-radius:0 0 28px 28px
+}
+.fashion-hero h1{
+animation:float 3s ease-in-out infinite
+}
+.products{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px
+}
+.product{
+background:#fff;
+border:1px solid #e0dbe2;
+border-radius:18px;
+padding:18px;
+transition:transform .25s,box-shadow .25s
+}
+.product:hover{
+transform:translateY(-7px);
+box-shadow:0 15px 35px #0002
+}
+.product-art{
+height:170px;
+border-radius:14px;
+background:linear-gradient(135deg,#f7d5e6,#d8d5ff);
+display:grid;
+place-items:center;
+font-size:4rem
+}
+.cta{
+margin:30px 0;
+padding:28px;
+border-radius:18px;
+background:#fff0f7;
+border:1px solid #ffd0e5;
+text-align:center
+}
+.stat{
+font-size:2rem;
+font-weight:900
+}
+.footer{
+margin-top:40px;
+padding:24px 0;
+background:#12233f;
+color:#dce7f5
+}
+.grade,.bill{
+max-width:760px;
+margin:auto
+}
+.summary{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+margin-top:18px
+}
+.summary .card{
+margin:0;
+text-align:center
+}
+.notice{
+padding:12px 14px;
+border-left:5px solid #3f83d8;
+background:#edf5ff;
+border-radius:8px
+}
+.small{
+font-size:.9rem;
+color:#63718a
+}
+@keyframes float{
+0%,100%{
+transform:translateY(0)
+}
+50%{
+transform:translateY(-10px)
+}
+
+}
+@media(max-width:800px){
+.form-grid,.media{
+grid-template-columns:1fr
+}
+.products{
+grid-template-columns:repeat(2,1fr)
+}
+.summary{
+grid-template-columns:repeat(2,1fr)
+}
+.nav .container{
+flex-direction:column;
+gap:8px
+}
+.nav a{
+margin:0 7px
+}
+
+}
+@media(max-width:480px){
+.products{
+grid-template-columns:1fr
+}
+.summary{
+grid-template-columns:1fr
+}
+
+}
+

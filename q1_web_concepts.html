@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Q1 – Web Fundamentals</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav">
+<div class="container">
+<div class="brand">Q1 · Web Fundamentals</div>
+<div>
+<a href="index.html">Home</a>
+<a href="q2_admission.html">Next →</a>
+</div>
+</div>
+</nav>
+<main class="container">
+<section class="hero">
+<span class="pill">Scenario 1</span>
+<h1>Understanding the World Wide Web</h1>
+<p class="lead">A compact visual guide to the fundamental concepts needed before developing an institutional website.</p>
+</section>
+<section class="card">
+<h2>1. Internet Overview</h2>
+<p>The Internet is a global network of interconnected computer networks that exchange data using standard communication protocols such as TCP/IP. The Web is a service that runs over the Internet using browsers, web servers and HTTP/HTTPS.</p>
+<div class="diagram">
+<div class="node">User Device</div>
+<div class="arrow">→</div>
+<div class="node">Internet</div>
+<div class="arrow">→</div>
+<div class="node">Web Server</div>
+</div>
+</section>
+<section class="card">
+<h2>2. Fundamental Computer Network Concepts</h2>
+<div class="grid">
+<div>
+<h3>IP Address</h3>
+<p>Identifies a device/interface on a network.</p>
+</div>
+<div>
+<h3>Protocol</h3>
+<p>A set of rules for communication, such as TCP/IP and HTTP.</p>
+</div>
+<div>
+<h3>Router</h3>
+<p>Forwards packets between different networks.</p>
+</div>
+<div>
+<h3>DNS</h3>
+<p>Translates domain names into IP addresses.</p>
+</div>
+</div>
+</section>
+<section class="card">
+<h2>3. URL and Its Structure</h2>
+<div class="code">https://www.example.com:443/admission/index.html?year=2026#form
+│      │   │           │   │                  │        │
+│      │   │           │   │                  │        └─ Fragment
+│      │   │           │   │                  └─ Query string
+│      │   │           │   └─ Path
+│      │   │           └─ Port
+│      │   └─ Domain/host
+│      └─ Scheme
+└─ Secure HTTP protocol</div>
+</section>
+<section class="card">
+<h2>4. Domain Name</h2>
+<p>A domain name is a human-readable address used to reach a website. DNS resolves the name to an IP address so the browser can locate the server.</p>
+<div class="diagram">
+<div class="node">kpriet.ac.in</div>
+<div class="arrow">→ DNS →</div>
+<div class="node">IP Address</div>
+</div>
+</section>
+<section class="card">
+<h2>5. Web Browsers and Web Servers</h2>
+<div class="grid">
+<div>
+<h3>Browser</h3>
+<p>Requests resources, interprets HTML/CSS/JavaScript and displays the user interface.</p>
+</div>
+<div>
+<h3>Web Server</h3>
+<p>Receives HTTP requests and returns webpages, files or generated responses.</p>
+</div>
+</div>
+</section>
+<section class="card">
+<h2>6. Working Principle of a Website</h2>
+<div class="diagram">
+<div class="node">1. Enter URL</div>
+<div class="arrow">→</div>
+<div class="node">2. DNS Lookup</div>
+<div class="arrow">→</div>
+<div class="node">3. HTTP Request</div>
+<div class="arrow">→</div>
+<div class="node">4. Server Response</div>
+<div class="arrow">→</div>
+<div class="node">5. Browser Renders</div>
+</div>
+</section>
+<section class="card">
+<h2>7. Client-side vs Server-side Scripting</h2>
+<div class="table-wrap">
+<table>
+<tr>
+<th>Client-side</th>
+<th>Server-side</th>
+</tr>
+<tr>
+<td>Runs mainly in the user's browser.</td>
+<td>Runs on the web server.</td>
+</tr>
+<tr>
+<td>Common technologies: HTML, CSS, JavaScript.</td>
+<td>Common technologies: Node.js, Python, Java, PHP.</td>
+</tr>
+<tr>
+<td>Handles interface behaviour and validation.</td>
+<td>Handles server logic, databases and protected operations.</td>
+</tr>
+</table>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">Q1 completed · HTML5 + CSS3</div>
+</footer>
+</body>
+</html>

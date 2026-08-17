@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Q2 – Student Admission Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav">
+<div class="container">
+<div class="brand">Q2 · Student Admission</div>
+<div>
+<a href="index.html">Home</a>
+<a href="q3_fashion.html">Next →</a>
+</div>
+</div>
+</nav>
+<main class="container">
+<section class="hero">
+<span class="pill">Scenario 2</span>
+<h1>Student Admission Form</h1>
+<p class="lead">Responsive HTML5 form demonstrating different controls, media elements, CSS selectors and the box model.</p>
+</section>
+<section class="card">
+<div class="notice">
+<strong>Media demonstration:</strong> local image, video and audio elements are included as required by the assignment.</div>
+<div class="media" style="margin-top:18px">
+<div>
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="College admission illustration">
+</div>
+<div>
+
+</div>
+</div>
+</section>
+<section class="card">
+<form id="admissionForm">
+<div class="form-grid">
+<div>
+<label for="name">Full Name</label>
+<input id="name" name="name" type="text" placeholder="Enter full name" required>
+</div>
+<div>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" placeholder="student@example.com" required>
+</div>
+<div>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="tel" placeholder="9876543210" pattern="[0-9]{
+10
+}
+" required>
+</div>
+<div>
+<label for="dob">Date of Birth</label>
+<input id="dob" name="dob" type="date" required>
+</div>
+<div>
+<label for="course">Course</label>
+<select id="course" required>
+<option value="">Choose a course</option>
+<option>B.E. Computer Science and Engineering</option>
+<option>B.E. Electronics and Communication</option>
+<option>B.Tech Information Technology</option>
+</select>
+</div>
+<div>
+<label for="marks">12th Percentage</label>
+<input id="marks" type="number" min="0" max="100" step="0.01" placeholder="e.g. 92.5" required>
+</div>
+<div class="full">
+<label>Gender</label>
+<label>
+<input type="radio" name="gender" value="Male" required> Male</label>
+<label>
+<input type="radio" name="gender" value="Female"> Female</label>
+<label>
+<input type="radio" name="gender" value="Other"> Other</label>
+</div>
+<div class="full">
+<label for="address">Address</label>
+<textarea id="address" rows="3" placeholder="Enter address" required>
+</textarea>
+</div>
+<div class="full">
+<label>
+<input type="checkbox" id="declaration" required> I confirm that the information provided is correct.</label>
+</div>
+</div>
+<button type="submit">Submit Application</button>
+<div id="admissionResult" class="result" hidden>Application submitted successfully. This is a front-end demonstration.</div>
+</form>
+</section>
+</main>
+<footer class="footer">
+<div class="container">Q2 completed · HTML5 form + CSS3 responsive UI</div>
+</footer>
+<script>document.getElementById('admissionForm').addEventListener('submit',e=>{
+e.preventDefault();
+document.getElementById('admissionResult').hidden=false;
+
+}
+);
+</script>
+</body>
+</html>

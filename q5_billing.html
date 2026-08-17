@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Q5 – Supermarket Billing</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav">
+<div class="container">
+<div class="brand">Q5 · Supermarket Billing</div>
+<div>
+<a href="index.html">Home</a>
+<a href="q1_web_concepts.html">Back to Q1</a>
+</div>
+</div>
+</nav>
+<main class="container">
+<section class="hero">
+<span class="pill">Scenario 5</span>
+<h1>Supermarket Customer Bill</h1>
+<p class="lead">Enter quantity and unit price for three products. A 10% discount is applied when the total exceeds ₹2000.</p>
+</section>
+<section class="card bill">
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Quantity</th>
+<th>Unit Price (₹)</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product A</td>
+<td>
+<input class="qty" id="q1" type="number" min="0" value="2">
+</td>
+<td>
+<input class="price" id="p1" type="number" min="0" value="450">
+</td>
+<td id="a1">—</td>
+</tr>
+<tr>
+<td>Product B</td>
+<td>
+<input class="qty" id="q2" type="number" min="0" value="3">
+</td>
+<td>
+<input class="price" id="p2" type="number" min="0" value="300">
+</td>
+<td id="a2">—</td>
+</tr>
+<tr>
+<td>Product C</td>
+<td>
+<input class="qty" id="q3" type="number" min="0" value="2">
+</td>
+<td>
+<input class="price" id="p3" type="number" min="0" value="550">
+</td>
+<td id="a3">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<button id="billBtn" style="margin-top:18px">Generate Bill</button>
+<div class="result" id="billResult">
+<p>Subtotal: <strong>₹<span id="subtotal">—</span>
+</strong>
+</p>
+<p>Discount: <strong>₹<span id="discount">—</span>
+</strong>
+</p>
+<h2>Final Payable: ₹<span id="finalAmount">—</span>
+</h2>
+</div>
+</section>
+<section class="card">
+<h2>Logic demonstrated</h2>
+<p>Variables store quantities and prices, literals represent numeric values, operators calculate amounts, conditional statements apply the discount, and a user-defined function generates the bill.</p>
+</section>
+</main>
+<footer class="footer">
+<div class="container">Q5 completed · JavaScript billing logic</div>
+</footer>
+<script src="script.js">
+</script>
+</body>
+</html>
